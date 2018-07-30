@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Main page after adding issue</title>
+    <link rel="stylesheet" href="css/nav-style.css" type="text/css">
+    <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
+</head>
+<body>
+    <header class="header affix">
+        <div class="branding">
+            <img class="logo" src="images/turtle (1).png">
+            <span class="title logout">  Turtle </span>
+        </div>
+    
+        <div class="header-actions">
+            <a class="nav-link nav-text logout pad-right" href="main.html">Home</a>
+            <a class="nav-link nav-text logout" href="index.html">Log Out</a>
+        </div>
+    </header>
+    <main>
+            <form>
+                <button class="btn login-btn" type="submit" formaction="addIssue.html"> ADD ISSUE  </button>
+                <button class="btn login-btn" type="submit"> EDIT ISSUE </button>
+                <button class="btn login-btn" type="submit"> DELETE ISSUE </button>
+            </form>
+            
+            <table class="issue-table" >
+                <tr>
+                    <th>Select</th>
+                    <th> Issue ID </th>
+                    <th> Issue Name </th>
+                    <th> Issue Type </th>
+                    <th> Issue Description </th>
+                </tr>
+                <tr>
+                    <td> <input type="checkbox"></td>
+                    <td> 1 </td>
+                    <td> <a href="heading.html"> Heading and Sections </a> </td>
+                    <td> Heading and sections type tags  </td>
+                    <td> Tags like &lth1> and &ltsection> is explored </td>
+                </tr>
+    
+                <tr>
+                    <td> <input type="checkbox"></td>
+                    <td> 2 </td>
+                    <td> <a href="media.html"> Media </a> </td>
+                    <td> &ltvideo>, &ltaudio> tags </td>
+                    <td> Various media tags explored </td>
+                </tr>
+                
+                <tr>
+                    <td> <input type="checkbox"></td>
+                    <td> 3 </td>
+                    <td> <a href="image.html"> Image </a></td>
+                    <td> &ltimg>, &ltpicture> tags </td>
+                    <td> Image and picture tags explored </td>
+                </tr>
+                
+                <tr>
+                    <td> <input type="checkbox"></td>
+                    <td> 4 </td>
+                    <td> <a href="old.html">Old Tags </a></td>
+                    <td> &ltmarquee>, etc </td>
+                    <td> Tags that are not popular or not used anymore </td>
+                </tr>
+
+                
+            </table>
+        </main>
+</body>
+</html>

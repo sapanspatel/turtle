@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add issue</title>
+    <link rel="stylesheet" href="css/nav-style.css" type="text/css"> 
+
+</head>
+<body>
+    <header class="header affix">
+        <div class="branding">
+            <img class="logo" src="images/turtle (1).png">
+            <span class="title logout">  Turtle </span>
+        </div>
+            
+        <div class="header-actions">
+            <a class="nav-link nav-text logout pad-right" href="main.html">Home</a>
+            <a class="nav-link nav-text logout" href="index.html">Log Out</a>
+        </div>
+    </header>
+    <div class="form-add">
+        <form>
+            <lable class="normal-title">
+                <h3> Add a New Issue </h3>
+            </lable>
+            <div class="issue-title">
+                Issue Title <br>
+                <input type= "text" placeholder="Old Tags">
+            </div>
+            
+            <div class="issue-type">
+                Issue Type <br>
+                <select>
+                    <option value="0">&ltmarquee>, etc </option>
+                    <option value="1">Option 1</option>
+                    <option value="2">Option 2</option>
+                    <option value="3">Option 3</option>
+                </select>
+            </div>
+
+            <div class="issue-des"
+                Issue Description<br>
+                <input type="text" placeholder="Tags that are not popular or used anymore">
+            </div>
+
+            <div class="priority">
+                Issue Priority: Low
+                <input type="range" min="1" max="100" value="50">
+                High
+            </div>
+
+            <div class="attachement">
+                Issue Attachement <br>
+                <button class="btn login-btn">Choose File</button> <small>No file chosen</small> 
+            </div>
+            
+        
+            <button class="btn login-btn" formaction="main2.html">Submit Issue</button>
+            <button class="btn login-btn" formaction="addIssue.html"> Reset </button>
+    
+        </form>
+    </div>
+    </main>
+    
+</body>
+</html>
