@@ -4,11 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Add issue</title>
+    <title>Edit issue</title>
     <link rel="stylesheet" href="css/nav-style.css" type="text/css"> 
     <script type="text/javascript" src="scripts/message.js"></script>
 </head>
-<body>
+<body onload="issuetoEdit()">
     <header class="header affix">
         <div class="branding">
             <img class="logo" src="images/turtle (1).png">
@@ -23,7 +23,7 @@
     <div class="form-add">
         <form>
             <lable class="normal-title">
-                <h3> Add a New Issue </h3>
+                <h3> Edit a Issue </h3>
             </lable>
             <div class="issue-title">
                 Issue Title <br>
@@ -46,20 +46,8 @@
                 <input type="text" id="description">
             </div>
 
-            <div class="priority">
-                Issue Priority: Low
-                <input type="range" min="1" max="100" value="50">
-                High
-            </div>
-
-            <div class="attachement">
-                Issue Attachement <br>
-                <button class="btn login-btn">Choose File</button> <small>No file chosen</small> 
-            </div>
-            
-        
-            <button class="btn login-btn" formaction="main.html" onclick="addIssue()">Submit Issue</button>
-            <button class="btn login-btn" formaction="addIssue.html"> Reset </button>
+            <button class="btn login-btn" formaction="main.html" onclick="editIssue()">Submit Issue</button>
+            <button class="btn login-btn"formaction="main.html" onclick="issueInfo()"> Cancel </button>
     
         </form>
     </div>
