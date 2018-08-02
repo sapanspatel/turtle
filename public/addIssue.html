@@ -7,6 +7,22 @@
     <title>Add issue</title>
     <link rel="stylesheet" href="css/nav-style.css" type="text/css"> 
     <script type="text/javascript" src="scripts/rest.js"></script>
+
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAaspK7HFgWxqfD5jYKet8GfXKcohFK4zY",
+            authDomain: "turtle-issue-tracker.firebaseapp.com",
+            databaseURL: "https://turtle-issue-tracker.firebaseio.com",
+            projectId: "turtle-issue-tracker",
+            storageBucket: "turtle-issue-tracker.appspot.com",
+            messagingSenderId: "347122873120"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+
 </head>
 <body>
     <header class="header affix">
@@ -17,7 +33,7 @@
             
         <div class="header-actions">
             <a class="nav-link nav-text logout pad-right" href="main.html">Home</a>
-            <a class="nav-link nav-text logout" href="index.html">Log Out</a>
+            <a class="nav-link nav-text logout" onclick="logout()">Log Out</a>
         </div>
     </header>
     <div class="form-add">

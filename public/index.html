@@ -9,11 +9,12 @@
     <style>
         .username,.password{width:100%;}
     </style>
+    
     <title> Welcome to Turtle</title>
 </head>
 <body>
     <div class="leftpane">
-    <form class="title">
+    <div class="title">
         <label >
             <h3> Welcome to </h3>
             <h2> Turtle </h2> 
@@ -21,22 +22,37 @@
         </label>
         <div class="login-group">
             <div class="username">
-                <input type="text" placeholder="Username or Email">
+                <input type="text" id="txtEmail" placeholder="Username or Email">
                  
             </div>
             <div class="password">
-                <input type="password" placeholder="Password">
+                <input type="password" id="txtPassword" placeholder="Password">
                 
             </div>
             
-                <button class="btn login-btn" formaction="main.html" type="submit"> LOGIN </button>
+                <button class="btn login-btn" id="btnLogin" type="submit" onclick="signin()"> LOGIN </button>
             
                 <p> Not member yet? <a href="signup.html">SignUp</a> </p>
            
         </div>
-    </form>
+    </div>
     </div>
     <div class="rightpane">
-    </div>
+    </div>  
 </body>
+<script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
+    <script>
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAaspK7HFgWxqfD5jYKet8GfXKcohFK4zY",
+            authDomain: "turtle-issue-tracker.firebaseapp.com",
+            databaseURL: "https://turtle-issue-tracker.firebaseio.com",
+            projectId: "turtle-issue-tracker",
+            storageBucket: "turtle-issue-tracker.appspot.com",
+            messagingSenderId: "347122873120"
+        };
+        firebase.initializeApp(config);
+    </script>
+    <script type="text/javascript" src="scripts/script.js"></script>
+
 </html>

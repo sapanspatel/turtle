@@ -8,18 +8,22 @@
     <link rel="stylesheet" href="css/nav-style.css" type="text/css">
     <link rel="stylesheet" href="css/print.css" type="text/css" media="print">
     <script type="text/javascript" src="scripts/rest.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.3.0/firebase.js"></script>
     <script>
-        function hide(){
-            if(document.getElementById("hidethis").style.display=="none"){
-               document.getElementById("hidethis").style.display = "block";
-            }
-            else{
-                document.getElementById("hidethis").style.display="none";
-            }
-        }
+        // Initialize Firebase
+        var config = {
+            apiKey: "AIzaSyAaspK7HFgWxqfD5jYKet8GfXKcohFK4zY",
+            authDomain: "turtle-issue-tracker.firebaseapp.com",
+            databaseURL: "https://turtle-issue-tracker.firebaseio.com",
+            projectId: "turtle-issue-tracker",
+            storageBucket: "turtle-issue-tracker.appspot.com",
+            messagingSenderId: "347122873120"
+        };
+        firebase.initializeApp(config);
     </script>
+    <script type="text/javascript" src="scripts/script.js"></script>
 </head>
-<body onload="getJSONData();">
+<body onload="getJSONData(); userWelcome()">
     <header class="header affix">
         <div class="branding">
             <img class="logo" src="images/turtle (1).png">
@@ -27,51 +31,19 @@
         </div>
     
         <div class="header-actions">
-            <a class="nav-link nav-text logout pad-right" href="main.html">Home</a>
+            <a class="nav-link nav-text logout pad-right" onclick="logout()">Home</a>
             <a class="nav-link nav-text logout" href="index.html">Log Out</a>
         </div>
     </header>
     <main>
+
+            <h1 align="center"> Issue List </h1>
+            <h3 align="center" id="welcome" class="userWelcome()">  </h3>
             <form>
                 <button class="btn login-btn" type="submit" formaction="addIssue.html"> ADD ISSUE  </button>
             </form>
             
             <table class="issue-table" id="issue-table" >
-                <!--
-                <tr>
-                    <th>Select</th>
-                    <th> Issue ID </th>
-                    <th> Issue Name </th>
-                    <th> Issue Type </th>
-                    <th> Issue Description </th>
-                </tr>
-                <tr id="hidethis">
-                    <td> <input type="checkbox"></td>
-                    <td> 1 </td>
-                    <td> <a href="heading.html"> Heading and Sections </a> </td>
-                    <td> Heading and sections type tags  </td>
-                    <td> Tags like &lth1> and &ltsection> is explored </td>
-                </tr>
-    
-                <tr>
-                    <td> <input type="checkbox"></td>
-                    <td> 2 </td>
-                    <td> <a href="media.html"> Media </a> </td>
-                    <td> &ltvideo>, &ltaudio> tags </td>
-                    <td> Various media tags explored </td>
-                </tr>
-                
-                <tr>
-                    <td> <input type="checkbox"></td>
-                    <td> 3 </td>
-                    <td> <a href="image.html"> Image </a></td>
-                    <td> &ltimg>, &ltpicture> tags </td>
-                    <td> Image and picture tags explored </td>
-                </tr>
-                -->
-                
-
-                </table>
             </table> 
         </main>
 </body>
