@@ -7,9 +7,9 @@
     <title>Image issue</title>
     <link rel="stylesheet" href="css/nav-style.css" type="text/css">
     <link rel="stylesheet" href="css/issue-style.css" type="text/css">
-    <script type="text/javascript" src="scripts/message.js"></script>
+    <script type="text/javascript" src="scripts/rest.js"></script>
 </head>
-<body>
+<body onload="getJSONData()">
         <header class="header affix">
                 <div class="branding">
                     <img class="logo" src="images/turtle (1).png">
@@ -23,6 +23,8 @@
         </header>
 
         <div class="middlepane">
-            
+                <table class="issue-table" id="issue-table" >
+
+                </table>
         </div>
 </body>

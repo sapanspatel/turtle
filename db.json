@@ -1,0 +1,30 @@
+{
+  "issues": [
+    {
+      "id": "2",
+      "title": "Weired bug! in CSS",
+      "type": "Css",
+      "author": "Ron",
+      "detail": "Bug in styling card for images"
+    },
+    {
+      "id": "3",
+      "title": "Simple HTML issue",
+      "type": "Heading",
+      "author": "Sam",
+      "detail": "Hello world is not printing"
+    },
+    {
+      "title": "Issue is.....",
+      "type": "Video",
+      "detail": "No issue is biggest issue lol!",
+      "id": "4"
+    },
+    {
+      "id": "5",
+      "title": "h1, h2 tags ",
+      "type": "Heading",
+      "detail": "headidng tag description "
+    }
+  ]
+}
